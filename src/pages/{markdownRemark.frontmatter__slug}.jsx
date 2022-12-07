@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 
 export default function BlogPostTemplate({ data }) {
@@ -10,7 +11,13 @@ export default function BlogPostTemplate({ data }) {
       <div>
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
-        {/* eslint-disable-next-line react/no-danger */}
+
+        <GatsbyImage
+          image={getImage(
+            frontmatter.featuredImage?.childImageSharp?.gatsbyImageData
+          )}
+        />
+
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </div>
@@ -25,6 +32,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(width: 800)
+          }
+        }
       }
     }
   }
@@ -36,6 +48,11 @@ BlogPostTemplate.propTypes = {
       frontmatter: PropTypes.shape({
         title: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,
+        featuredImage: PropTypes.shape({
+          childImageSharp: PropTypes.shape({
+            gatsbyImageData: PropTypes.shape({}),
+          }),
+        }),
       }).isRequired,
       html: PropTypes.string.isRequired,
     }),
