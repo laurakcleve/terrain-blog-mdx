@@ -14,10 +14,11 @@ export default function BlogPostTemplate({ data }) {
 
         <GatsbyImage
           image={getImage(
-            frontmatter.featuredImage?.childImageSharp?.gatsbyImageData
+            frontmatter.featuredImage?.childImageSharp?.gatsbyImageData,
           )}
         />
 
+        {/* eslint-disable-next-line react/no-danger */}
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </div>
