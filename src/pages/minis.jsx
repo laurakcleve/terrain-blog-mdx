@@ -1,39 +1,11 @@
 import * as React from 'react';
-import { graphql, Link } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import '../styles/index.css';
-import Layout from '../components/Layout';
+import PostList from '../components/PostList';
 
 export default function IndexPage({ data }) {
   const posts = data.allMdx.edges;
-  return (
-    <Layout>
-      <div>
-        {posts.map((post) => (
-          <div key={post.node.id} className="post-item">
-            <Link to={post.node.frontmatter.slug}>
-              <GatsbyImage
-                image={getImage(
-                  post.node.frontmatter.featuredImage?.childImageSharp
-                    ?.gatsbyImageData,
-                )}
-              />
-              <div className="post-item-text">
-                <h3>{post.node.frontmatter.title}</h3>
-                <small>
-                  {new Date(post.node.frontmatter.date).toLocaleDateString(
-                    'en-US',
-                    { month: 'long', day: 'numeric', year: 'numeric' },
-                  )}
-                </small>
-              </div>
-            </Link>
-          </div>
-        ))}
-      </div>
-    </Layout>
-  );
+  return <PostList posts={posts} />;
 }
 
 export const pageQuery = graphql`
@@ -48,6 +20,7 @@ export const pageQuery = graphql`
             slug
             title
             date
+            description
             featuredImage {
               id
               childImageSharp {
