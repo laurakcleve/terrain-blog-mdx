@@ -29,6 +29,8 @@ export default function Layout({ children }) {
             </div>
             <nav className="desktop">
               <Link to="/">All posts</Link>
+              <Link to="/minis">Minis</Link>
+              <Link to="/terrain">Terrain</Link>
               <Link to="/about/">About</Link>
             </nav>
           </div>
