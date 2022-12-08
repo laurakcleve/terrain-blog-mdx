@@ -2,26 +2,20 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
+import Layout from '../components/Layout';
 
 export default function BlogPostTemplate({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (
-    <div>
+    <Layout>
+      <h1>{frontmatter.title}</h1>
+      <p className="post-page-date">{frontmatter.date}</p>
       <div>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-
-        <GatsbyImage
-          image={getImage(
-            frontmatter.featuredImage?.childImageSharp?.gatsbyImageData,
-          )}
-        />
-
         {/* eslint-disable-next-line react/no-danger */}
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
-    </div>
+    </Layout>
   );
 }
 
