@@ -439,6 +439,10 @@ p.post-page-date {
   list-style-type: none;
 }
 
+.gatsby-resp-image-wrapper {
+  margin-bottom: 2rem;
+}
+
 svg.fa-external-link-alt {
   margin-left: 0.4rem;
   vertical-align: -0.025em;
