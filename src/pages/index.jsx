@@ -6,7 +6,7 @@ import '../styles/index.css';
 import Layout from '../components/Layout';
 
 export default function IndexPage({ data }) {
-  const posts = data.allMarkdownRemark.edges;
+  const posts = data.allMdx.edges;
   return (
     <Layout>
       <div>
@@ -27,6 +27,7 @@ export default function IndexPage({ data }) {
                     { month: 'long', day: 'numeric', year: 'numeric' },
                   )}
                 </small>
+                <p>{post.node.frontmatter.description}</p>
               </div>
             </Link>
           </div>
@@ -38,13 +39,14 @@ export default function IndexPage({ data }) {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+    allMdx(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
           frontmatter {
             slug
             title
             date
+            description
             featuredImage {
               id
               childImageSharp {
@@ -60,7 +62,7 @@ export const pageQuery = graphql`
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
+    allMdx: PropTypes.shape({
       edges: PropTypes.arrayOf(PropTypes.shape({})),
     }),
   }).isRequired,

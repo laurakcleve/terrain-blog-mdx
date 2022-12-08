@@ -1,19 +1,17 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
 
-export default function BlogPostTemplate({ data }) {
-  const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+export default function BlogPostTemplate({ data, children }) {
+  const { mdx } = data;
+  const { frontmatter, body } = mdx;
   return (
     <Layout>
       <h1>{frontmatter.title}</h1>
       <p className="post-page-date">{frontmatter.date}</p>
       <div>
-        {/* eslint-disable-next-line react/no-danger */}
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div>{children}</div>
       </div>
     </Layout>
   );
@@ -21,8 +19,8 @@ export default function BlogPostTemplate({ data }) {
 
 export const pageQuery = graphql`
   query ($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
+    mdx(id: { eq: $id }) {
+      body
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         slug

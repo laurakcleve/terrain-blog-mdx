@@ -7,9 +7,9 @@ module.exports = {
     siteUrl: 'https://www.yourdomain.tld',
   },
   plugins: ['gatsby-plugin-image', {
-    resolve: 'gatsby-transformer-remark',
+    resolve: 'gatsby-plugin-mdx',
     options: {
-      plugins: [
+      gatsbyRemarkPlugins: [
         {
           resolve: 'gatsby-remark-images',
           options: {
