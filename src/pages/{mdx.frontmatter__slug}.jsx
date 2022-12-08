@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 
 export default function BlogPostTemplate({ data, children }) {
   const { mdx } = data;
-  const { frontmatter, body } = mdx;
+  const { frontmatter } = mdx;
   return (
     <Layout>
       <h1>{frontmatter.title}</h1>
@@ -37,7 +37,7 @@ export const pageQuery = graphql`
 
 BlogPostTemplate.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
+    mdx: PropTypes.shape({
       frontmatter: PropTypes.shape({
         title: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,
@@ -50,4 +50,8 @@ BlogPostTemplate.propTypes = {
       html: PropTypes.string.isRequired,
     }),
   }).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
