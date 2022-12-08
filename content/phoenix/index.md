@@ -1,0 +1,226 @@
+---
+title: 'The Phoenix'
+slug: '/phoenix'
+date: '2022-11-26'
+description: ''
+featuredImage: 'images/final-1.jpg'
+category: 'minis'
+---
+
+![final-1](images/final-1.jpg)
+
+![final-2](images/final-2.jpg)
+
+![final-3](images/final-3.jpg)
+
+![final-4](images/final-4.jpg)
+
+![final-5](images/final-5.jpg)
+
+![final-6](images/final-6.jpg)
+
+![final-7](images/final-7.jpg)
+
+![final-8](images/final-8.jpg)
+
+![final-9](images/final-9.jpg)
+
+![final-10](images/final-10.jpg)
+
+# Assembly: 7 hours
+
+![sprues](images/01-sprues.jpg)
+
+The first two pieces. This is the center of the body.
+
+![assembly 1](images/02-assembly-1.jpg)
+
+The under-tail piece didn't fit right, unfortunately. Those edges are supposed to be flush.
+
+![assembly 2](images/03-assembly-2.jpg)
+
+I had to chisel off a lot of the edges to get it close. You can see all the shavings in the corner.
+
+![assembly 3](images/04-assembly-3.jpg)
+
+In the end it came together pretty snugly.
+
+![assembly 4](images/05-assembly-4.jpg)
+
+Continuing on...
+
+![assembly 5](images/06-assembly-5.jpg)
+
+Assembling is kind of addicting, especially on such a big model. You can make a lot of progress very quickly and it's exciting to see it come together.
+
+In hindsight I wish I would have taken the time to fill in the gaps and sand them smooth each time I added a piece, it would have been much easier to reach everything.
+
+![assembly 6](images/07-assembly-6.jpg)
+
+These pieces are for the face inside the beak.
+
+![assembly 7](images/08-assembly-7.jpg)
+
+Some of the tiny hands on the wings are already built in... but 30 of them are not.
+
+This part took 3 of the 7 total hours of assembly.
+
+![hands sprue](images/09-hands-sprue.jpg)
+
+The official build instructions showed incorrect placement for several of the hands, and I had to look at other build guides and do a lot of my own trial and error.
+
+![attaching hands 1](images/10-hands-1.jpg)
+
+I set aside and kept track of the hands that I couldn't find the right place for, while I moved on and attached the ones that were a definite fit.
+
+![attaching hands 2](images/11-hands-2.jpg)
+
+The last several were anyone's guess, and I used blue tacky to dry fit them before sealing their fate.
+
+![attaching hands 3](images/12-hands-3.jpg)
+
+Finally I can put the wings on.
+
+![assembly 8](images/13-assembly-8.jpg)
+
+Assembly complete!
+
+![assembled](images/14-assembled.jpg)
+
+The gaps are many and wide.
+
+![gaps 1](images/15-gaps-1.jpg)
+
+![gaps 2](images/16-gaps-2.jpg)
+
+![gaps 3](images/17-gaps-3.jpg)
+
+![gaps 4](images/18-gaps-4.jpg)
+
+# Gap filling/sanding: 14 hours
+
+This is the finished filling; I used Milliput for all of it.
+
+![filling 1](images/19-filling-1.jpg)
+
+![filling 2](images/20-filling-2.jpg)
+
+![filling 3](images/21-filling-3.jpg)
+
+![filling 4](images/22-filling-4.jpg)
+
+![filling 5](images/23-filling-5.jpg)
+
+It's always impossible to tell beforehand if the gaps will be smooth enough after painting.
+
+# Priming: 2 hours
+
+First a coat of solid black with an airbrush. I was prepared to go back and sand down any putty or mold lines that I missed, but it actually ended up clean enough.
+
+![primed 1](images/24-primed-1.jpg)
+
+I went ahead and did a grey zenithal highlight from above, then a white highlight from below to lay the foundation for the lighting coming from the pool.
+
+![primed 2](images/25-primed-2.jpg)
+
+Then I dry brushed the whole thing with white, to bring out the edges. It was particularly great for the feathers, which have incredible detail.
+
+![primed 3](images/26-primed-3.jpg)
+
+![primed 4](images/27-primed-4.jpg)
+
+![primed 5](images/28-primed-5.jpg)
+
+# Base coat: 15 hours
+
+![base coat 1](images/29-base-coat-1.jpg)
+
+![base coat 2](images/30-base-coat-2.jpg)
+
+![base coat 3](images/31-base-coat-3.jpg)
+
+![base coat 4](images/32-base-coat-4.jpg)
+
+![base coat 5](images/33-base-coat-5.jpg)
+
+![base coat 6](images/34-base-coat-6.jpg)
+
+# Building the base: 6 hours
+
+I used bark chips and bits of cork to create a rocky ground. Above you can see the test base I made to see how the texture would turn out.
+
+The bits of blue tacky are just marking where the model will sit.
+
+![building base 1](images/35-building-base-1.jpg)
+
+Testing the fit:
+
+![building base 2](images/36-building-base-2.jpg)
+
+And adding some skulls. They were the only bones we had.
+
+![building base 3](images/37-building-base-3.jpg)
+
+I filled everything in with a mixture of joint compound and sand.
+
+![building base 4](images/38-building-base-4.jpg)
+
+# Painting the base: 6 hours
+
+Coated the base with Mod Podge to seal it.
+
+![painting base 1](images/39-painting-base-1.jpg)
+
+Then primed with black, a zenithal coat of grey, and some white to brighten up where the water will be.
+
+![painting base 2](images/40-painting-base-2.jpg)
+
+Finally the base colors.
+
+![painting base 3](images/41-painting-base-3.jpg)
+
+# Object source lighting: 4 hours
+
+![osl 1](images/42-osl-1.jpg)
+
+![osl 2](images/43-osl-2.jpg)
+
+# Attaching the base: 2 hours
+
+There was a bit of a gap around the model after gluing it on, so I had to go back and fill it in with more joint compound and sand.
+
+![attaching base 1](images/44-attaching-base-1.jpg)
+
+![attaching base 2](images/45-attaching-base-2.jpg)
+
+Then added the Mod Podge again for sealing.
+
+![attaching base 3](images/46-attaching-base-3.jpg)
+
+After that I painted it to blend in with the ground as best I could.
+
+# Water effects: 1 hour
+
+I did three applications of Woodland Scenics realistic water, 24 hours apart. This is after the first application.
+
+![water effects 1](images/47-water-1.jpg)
+
+It looks perfectly smooth just after applying it.
+
+![water effects 2](images/48-water-2.jpg)
+
+But there is some shrinkage, and I did end up with a slightly bumpy surface.
+
+![water effects 3](images/49-water-3.jpg)
+
+# Highlights and details: 30 hours
+
+Most of the details were done intermittently between working on the base and the water and other things.
+
+The wings (including the undersides) were 13 of those hours.
+
+![wings](images/50-wings.jpg)
+
+# Total time: 89 hours
+
+Over 4 weeks
