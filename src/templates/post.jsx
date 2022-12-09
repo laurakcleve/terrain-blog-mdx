@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
 
-export default function BlogPostTemplate({ data, children }) {
+export default function BlogPostTemplate({ data, children, pageContext }) {
+  const { prev, next } = pageContext;
   const { mdx } = data;
   const { frontmatter } = mdx;
   return (
@@ -13,6 +14,27 @@ export default function BlogPostTemplate({ data, children }) {
       <div>
         <div>{children}</div>
       </div>
+
+      <ul className="prev-next">
+        <li>
+          {prev && (
+            <Link to={prev.frontmatter.slug} rel="prev">
+              ← {prev.frontmatter.title}
+            </Link>
+          )}
+        </li>
+        <li>
+          {next && (
+            <Link to={next.frontmatter.slug} rel="next">
+              {next.frontmatter.title} →
+            </Link>
+          )}
+        </li>
+      </ul>
+
+      <Link to="/" className="bottom-home">
+        Home
+      </Link>
     </Layout>
   );
 }
@@ -47,11 +69,24 @@ BlogPostTemplate.propTypes = {
           }),
         }),
       }).isRequired,
-      html: PropTypes.string.isRequired,
     }),
   }).isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  pageContext: PropTypes.shape({
+    prev: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        slug: PropTypes.string,
+        title: PropTypes.string,
+      }),
+    }),
+    next: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        slug: PropTypes.string,
+        title: PropTypes.string,
+      }),
+    }),
+  }).isRequired,
 };
