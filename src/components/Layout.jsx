@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import '../styles/index.css';
+import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import Logo from '../images/logo.svg';
 import Line from '../images/line.svg';
+import Instagram from '../images/instagram.svg';
 
 export default function Layout({ children }) {
   return (
@@ -24,7 +27,7 @@ export default function Layout({ children }) {
                 rel="noopener noreferrer"
                 className="instagram-icon"
               >
-                <i className="fab fa-instagram fa-2x" />
+                <Instagram />
               </a>
             </div>
             <nav className="desktop">
@@ -48,7 +51,7 @@ export default function Layout({ children }) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <i className="fab fa-instagram fa-lg" />
+                      <Instagram />
                       <span>@1d3trees</span>
                     </a>
                   </li>
