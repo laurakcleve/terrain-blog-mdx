@@ -1,2 +1,3 @@
-// eslint-disable-next-line import/extensions
-import '@fortawesome/fontawesome-free/js/all.js';
+require('typeface-alegreya');
+require('typeface-alegreya-sc');
+require('typeface-sarabun');
