@@ -3,8 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: 'Tabletop Blog',
-    siteUrl: 'https://www.yourdomain.tld',
+    title: '1d3Trees',
+    author: 'Laura Cleveland',
+    description: 'Tabletop DIY',
+    siteUrl: 'https://1d3trees.com/',
   },
   plugins: [
     'gatsby-plugin-image',

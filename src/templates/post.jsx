@@ -2,6 +2,7 @@ import * as React from 'react';
 import { graphql, Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 export default function BlogPostTemplate({ data, children, pageContext }) {
   const { prev, next } = pageContext;
@@ -9,6 +10,7 @@ export default function BlogPostTemplate({ data, children, pageContext }) {
   const { frontmatter } = mdx;
   return (
     <Layout>
+      <SEO title={frontmatter.title} />
       <h1>{frontmatter.title}</h1>
       <p className="post-page-date">{frontmatter.date}</p>
       <div>

@@ -1,10 +1,11 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 function About() {
   return (
     <Layout>
+      <SEO title="About" />
       <p>
         My name is Laura, and I like D&D and tabletop gaming. Building terrain
         and painting minis is my jam.

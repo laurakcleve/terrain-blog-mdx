@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import '../styles/index.css';
-import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import Logo from '../images/logo.svg';
 import Line from '../images/line.svg';
 import Instagram from '../images/instagram.svg';

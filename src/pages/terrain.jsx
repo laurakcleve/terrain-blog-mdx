@@ -5,7 +5,7 @@ import PostList from '../components/PostList';
 
 export default function TerrainPage({ data }) {
   const posts = data.allMdx.edges;
-  return <PostList posts={posts} />;
+  return <PostList posts={posts} title="Terrain" />;
 }
 
 export const pageQuery = graphql`

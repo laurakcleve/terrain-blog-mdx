@@ -5,7 +5,7 @@ import PostList from '../components/PostList';
 
 export default function IndexPage({ data }) {
   const posts = data.allMdx.edges;
-  return <PostList posts={posts} />;
+  return <PostList posts={posts} title="Home" />;
 }
 
 export const pageQuery = graphql`

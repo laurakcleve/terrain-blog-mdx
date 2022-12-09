@@ -3,10 +3,12 @@ import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import Layout from './Layout';
+import SEO from './SEO';
 
-export default function PostList({ posts }) {
+export default function PostList({ posts, title }) {
   return (
     <Layout>
+      <SEO title={title} />
       {posts.map(({ node }) => (
         <div key={node.id} className="post-item">
           <Link to={node.frontmatter.slug}>
@@ -55,4 +57,5 @@ PostList.propTypes = {
       }),
     }),
   ).isRequired,
+  title: PropTypes.string.isRequired,
 };
