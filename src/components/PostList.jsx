@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
-import '../styles/index.css';
 import Layout from './Layout';
 
 export default function PostList({ posts }) {
@@ -12,6 +11,7 @@ export default function PostList({ posts }) {
         <div key={node.id} className="post-item">
           <Link to={node.frontmatter.slug}>
             <GatsbyImage
+              alt={`${node.frontmatter.title}-thumbnail`}
               image={getImage(
                 node.frontmatter.featuredImage?.childImageSharp
                   ?.gatsbyImageData,
@@ -39,6 +39,7 @@ PostList.propTypes = {
   posts: PropTypes.arrayOf(
     PropTypes.shape({
       node: PropTypes.shape({
+        id: PropTypes.string,
         frontmatter: PropTypes.shape({
           date: PropTypes.string,
           description: PropTypes.string,

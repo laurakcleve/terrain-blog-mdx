@@ -13,6 +13,7 @@ export const pageQuery = graphql`
     allMdx(sort: { frontmatter: { date: DESC } }) {
       edges {
         node {
+          id
           frontmatter {
             slug
             title
