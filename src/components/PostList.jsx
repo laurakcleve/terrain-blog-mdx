@@ -15,9 +15,7 @@ export default function PostList({ posts, title }) {
             <GatsbyImage
               alt={`${node.frontmatter.title}-thumbnail`}
               image={getImage(
-                node.frontmatter.featuredImage?.childImageSharp
-                  ?.gatsbyImageData,
-              )}
+                node.frontmatter.featuredImage)}
             />
             <div className="post-item-text">
               <h3>{node.frontmatter.title}</h3>
