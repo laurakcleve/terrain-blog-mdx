@@ -14,18 +14,11 @@ export default function PostList({ posts, title }) {
           <Link to={node.frontmatter.slug}>
             <GatsbyImage
               alt={`${node.frontmatter.title}-thumbnail`}
-              image={getImage(
-                node.frontmatter.featuredImage)}
+              image={getImage(node.frontmatter.featuredImage)}
             />
             <div className="post-item-text">
               <h3>{node.frontmatter.title}</h3>
-              <small>
-                {new Date(node.frontmatter.date).toLocaleDateString('en-US', {
-                  month: 'long',
-                  day: 'numeric',
-                  year: 'numeric',
-                })}
-              </small>
+              <small>{node.frontmatter.date}</small>
               <p>{node.frontmatter.description}</p>
             </div>
           </Link>
